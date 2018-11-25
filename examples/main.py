@@ -90,7 +90,7 @@ def wait_for_internet_connection():
 @buttonshim.on_release(buttonshim.BUTTON_A)
 def button_a(button, pressed):
     buttonflash()
-    runprocess("/home/pi/Pimoroni/inkyphat/examples/qr.py 'http://www.electromaker.io'")
+    runprocess("/home/pi/Pimoroni/inkyphat/examples/qr.py red 'http://www.electromaker.io'")
 
 # Button B - displays Twitter feed example - you need to sign up for a twitter app api and fill in the details below 
 @buttonshim.on_release(buttonshim.BUTTON_B)
