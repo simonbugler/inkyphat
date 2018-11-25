@@ -160,7 +160,7 @@ fontsm = ImageFont.truetype("/home/pi/Pimoroni/inkyphat/fonts/elec.ttf", 6)
 fontlg = ImageFont.truetype("/home/pi/Pimoroni/inkyphat/fonts/elec.ttf", 16)
 
 inkyphat.set_rotation(180)
-
+inkyphat.set_colour('red')
 inkyphat.set_border(inkyphat.BLACK)
 
 # Load the backdrop image
