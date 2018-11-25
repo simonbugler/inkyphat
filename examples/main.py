@@ -121,6 +121,7 @@ def button_c(button, pressed):
 @buttonshim.on_release(buttonshim.BUTTON_D)
 def button_d(button, pressed):
     buttonflash()
+    inkyphat.set_colour('red')
     inkyphat.set_rotation(180)
     inkyphat.set_image(Image.open("/home/pi/Pimoroni/inkyphat/examples/resources/oct2.png"))
     inkyphat.show()
