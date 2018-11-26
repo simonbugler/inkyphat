@@ -90,7 +90,7 @@ def wait_for_internet_connection():
 @buttonshim.on_release(buttonshim.BUTTON_A)
 def button_a(button, pressed):
     buttonflash()
-    runprocess("/home/pi/Pimoroni/inkyphat/examples/qr.py 'http://www.electromaker.io'")
+    runprocess("/home/pi/Pimoroni/inkyphat/examples/qr.py red 'http://www.electromaker.io'")
 
 # Button B - displays Twitter feed example - you need to sign up for a twitter app api and fill in the details below 
 @buttonshim.on_release(buttonshim.BUTTON_B)
@@ -121,6 +121,7 @@ def button_c(button, pressed):
 @buttonshim.on_release(buttonshim.BUTTON_D)
 def button_d(button, pressed):
     buttonflash()
+    inkyphat.set_colour('red')
     inkyphat.set_rotation(180)
     inkyphat.set_image(Image.open("/home/pi/Pimoroni/inkyphat/examples/resources/oct2.png"))
     inkyphat.show()
