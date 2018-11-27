@@ -130,7 +130,7 @@ def button_d(button, pressed):
 @buttonshim.on_release(buttonshim.BUTTON_E)
 def button_e(button, pressed):
     buttonflash()
-    runprocess('/home/pi/Pimoroni/inkyphat/examples/hello.py "SIMON BUGLER"')
+    runprocess('/home/pi/Pimoroni/inkyphat/examples/hello.py "SIMON BUGLER" red')
 
 
 # BUTTTON HOLDS
