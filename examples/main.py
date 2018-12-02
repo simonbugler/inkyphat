@@ -96,6 +96,7 @@ def button_a(button, pressed):
 @buttonshim.on_release(buttonshim.BUTTON_B)
 def button_b(button, pressed):
     buttonflash()
+    inkyphat.set_colour('red')
     api = twitter.Api(consumer_key='-',
     consumer_secret='-',
     access_token_key='-',
